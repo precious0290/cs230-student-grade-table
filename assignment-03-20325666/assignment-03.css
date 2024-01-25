@@ -1,0 +1,105 @@
+/*All my CSS styling for my table and buttons found on w3schools webpage */
+body{
+    background: linear-gradient(#CCFFFF, #CCFFE5,#CCCCFF);
+    height: 600px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+} 
+
+td {
+  border: 1px solid #404040;
+  text-align: center;
+  padding: 8px;
+}
+th{
+    border: 1px solid #404040;
+  text-align: center;
+  padding: 8px;
+}
+.assignments{
+    text-align: center;
+}
+.names{
+    text-align: left;
+}
+#grades{
+    text-align: right;
+}
+#headings{
+    background-color: #A0A0A0;
+    color: #FFFFFF;
+}
+
+tr:hover:nth-child(even) {
+  background-color: #9999FF;
+}
+tr:hover:nth-child(odd) {
+  background-color: #9999FF;
+}
+.button {
+  background-color: #B266FF; 
+  border: none;
+  color: #FF66FF;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover {background-color: #9933FF}
+.button:active {
+  background-color: #CC99FF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.rowAdd {
+  text-align: center;
+    position: relative;
+    bottom: 0px;
+    left:540px;
+    font-size: 20px;
+    border-radius: 12px;
+
+
+}
+.colAdd {
+  text-align: center;
+    position: relative;
+    bottom: 0px;
+    left:540px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+.saveData{
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left:540px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+.loadData{
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left:540px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+
+tr:nth-child(even)  /*easier than giving each row an id -> https://www.w3schools.com/cssref/sel_nth-child.asp*/
+{
+    background-color: #E0E0E0;
+}
+
+tr:nth-child(odd) 
+{
+    background-color: #C0C0C0;
+}
+

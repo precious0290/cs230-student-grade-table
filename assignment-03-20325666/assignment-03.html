@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head> 
+    
+         <meta charset="UTF-8">
+         <title>Precious's Student Table</title>
+        <link href="assignment-03.css" rel="stylesheet" type="text/css"/> <!--link to my css stylesheet -->
+         <script src ="./assignment-03.js"></script><!--link to my javascript-->
+        </head>
+    <body onload="yellowCell();gradeRedCell();" oninput="yellowCell()"> <!--on load the table w load up w the cells and then oninput it will change it according to the conditions-->
+        <!--https://www.htmlgoodies.com/javascript/using-multiple-javascript-onload-functions/-->
+    <h1>Student Grades Table</h1>
+        
+   <table id="GradesTable">
+  <tr id="headings"> <!--all my headings for each of my columns-->
+       <th>Student Name</th>
+      <th>Student ID</th>
+      <th class="assignments">Assignment 1</th>
+      <th class="assignments">Assignment 2</th>
+      <th class="assignments">Assignment 3</th>
+      <th class="assignments">Assignment 4</th>
+      <th class="assignments">Assignment 5</th>
+       <th id="avgTitle" onclick="gradeType()">Average [%]</th>
+  </tr>
+  <tr id="row1">
+
+    <td class="names">Misaki Ayuzawa</td>
+    <td class="names">29029919</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+   
+  </tr>
+  <tr id="row2">
+    <td class="names">Rio Futaba</td>
+    <td class="names">29393293</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+  <tr id="row3">
+    <td class="names">Karma Akabane</td>
+    <td class="names">64206997</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id ="grades">-</td>
+  </tr>
+  <tr id="row4">
+    <td class="names">Yumeko Jabami</td>
+    <td class="names">69924901</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+  <tr id="row5">
+    <td class="names">Mai Sakurajima</td>
+    <td class="names">19282344</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+  <tr id="row6">
+    <td class="names">Shouko Nishimiya</td>
+    <td class="names">73828283</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+    <tr id="row7">
+    <td class="names">Zenitsu Agatsuma</td>
+    <td class="names">27373719</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td class="grades">-</td>
+  </tr>
+    <tr id="row8">
+    <td class="names">Kakashi Hatake</td>
+    <td class="names">92929222</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+    <tr id ="row9">
+    <td class="names">Shoto Todoroki</td>
+    <td class="names">47482828</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+  </tr>
+    <tr id="row10">
+    <td class="names">Nezuko Kamado</td>
+    <td class="names">90202939</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td contenteditable="true" oninput="GradesCalc()">-</td>
+    <td id="grades">-</td>
+</table>
+    
+  <span id="assignmentsSub"></span>
+ <button class="button rowAdd"  onclick="RowAdd();GradesCalc();">Add Row</button>
+        <button class="button colAdd"  onclick="ColAdd();GradesCalc()">Add Col</button>
+        <button class="button saveData" onclick="saveGradeTable();GradesCalc();yellowCell();">Save</button>
+        <button class="button loadData" onclick="LoadGradeTable();GradesCalc();yellowCell();">Load</button>
+    <!--will probs need another button for the toggle of grade types-->
+    
+    </body>
+    
+    
+    
+    
+</html>
